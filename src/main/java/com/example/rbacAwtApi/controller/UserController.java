@@ -27,7 +27,7 @@ public class UserController {
         User user = new User();
         user.setUsername(body.get("username"));
         user.setPassword(encoder.encode(body.get("password")));
-        user.getRoles().add(roleRepository.findById("USER").orElseThrow());
+        user.getRoles().add(roleRepository.findByName("USER").orElseThrow());
         return ResponseEntity.ok(userService.saveUser(user));
     }
 

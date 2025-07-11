@@ -1,4 +1,4 @@
-package com.example.rbacAwtApi.securtiy;
+package com.example.rbacAwtApi.security;
 
 import com.example.rbacAwtApi.service.UserService;
 import jakarta.servlet.FilterChain;
@@ -16,9 +16,9 @@ import java.io.IOException;
 
 @Component
 @RequiredArgsConstructor
-public abstract class JwtAuthenticationFilter extends OncePerRequestFilter {
+public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
-    private final JwtTokenProvider tokenProvider;
+    private final com.example.rbacAwtApi.security.JwtTokenProvider tokenProvider;
     private final UserService userService;
 
     @Override
