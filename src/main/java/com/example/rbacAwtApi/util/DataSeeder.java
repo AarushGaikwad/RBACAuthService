@@ -16,10 +16,9 @@ import java.util.Set;
 public class DataSeeder {
 
     private final RoleRepository roleRepo;
-    private final UserRepository userRepo;
+    private final UserRepository userRepository;
     private final PasswordEncoder encoder;
 
-    @Override
     public void run(String... args){
         Role admin = new Role("ADMIN");
         Role user = new Role("USER");
@@ -28,4 +27,6 @@ public class DataSeeder {
         User adminUser = new User(null, "admin", encoder.encode("admin123"), Set.of(admin));
         User regularUser = new User(null, "user", encoder.encode("user123"), Set.of(user));
     }
+
+
 }

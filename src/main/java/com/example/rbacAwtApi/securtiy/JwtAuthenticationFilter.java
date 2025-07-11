@@ -1,4 +1,4 @@
-package com.example.rbacAwtApi.security;
+package com.example.rbacAwtApi.securtiy;
 
 import com.example.rbacAwtApi.service.UserService;
 import jakarta.servlet.FilterChain;

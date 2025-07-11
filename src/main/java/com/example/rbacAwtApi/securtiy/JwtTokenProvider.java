@@ -1,4 +1,4 @@
-package com.example.rbacAwtApi.security;
+package com.example.rbacAwtApi.securtiy;
 
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
